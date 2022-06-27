@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/get', (req, res) => {
-    res.send('get 정보 전달 잘 됨.')
+    res.send(`<span>${req.query.id}</span><p></p><span>${req.query.pwd}</span>`)
 });
 
 app.post('/post', (req, res) => {
